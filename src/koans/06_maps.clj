@@ -49,7 +49,7 @@
 
   "Often you will need to get the keys, but the order is undependable"
   (= (list 2010 2014 2018)
-     (sort (keys { 2014 "Sochi" 2018 "PyeongChang" 2010 "Vancouver"})))
+     (sort (keys {2014 "Sochi" 2018 "PyeongChang" 2010 "Vancouver"})))
 
   "You can get the values in a similar way"
   (= (list "PyeongChang"
@@ -61,5 +61,5 @@
   (= {:a 2 :b 3}
      (into {}
            (map
-            (fn [[k v]] [k (inc v)])
-            {:a 1 :b 2}))))
+             (fn [[k v]] [k (inc v)])
+             {:a 1 :b 2}))))
